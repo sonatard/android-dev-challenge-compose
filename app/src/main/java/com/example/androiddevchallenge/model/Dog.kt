@@ -1,3 +1,18 @@
+/*
+ * Copyright 2021 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     https://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
 package com.example.androiddevchallenge.model
 
 import androidx.compose.material.icons.Icons
@@ -18,16 +33,10 @@ enum class Sex {
     }
 }
 
-enum class DogColor {
-    BROWN, BLACK, WHITE;
-}
-
-
 data class DogModel(
     val id: String,
     val name: String,
     val sex: Sex,
-    val color: DogColor = DogColor.BLACK,
     val age: Int, // month
     val image: Int,
     val place: String = "USA",
@@ -44,7 +53,6 @@ val dogList = listOf(
         id = "1",
         name = "Abby",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 10,
         image = R.drawable.dog1,
     ),
@@ -52,7 +60,6 @@ val dogList = listOf(
         id = "2",
         name = "Bruno",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 20,
         image = R.drawable.dog2,
         place = "Japan",
@@ -61,7 +68,6 @@ val dogList = listOf(
         id = "3",
         name = "Hunter",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 30,
         image = R.drawable.dog3,
     ),
@@ -69,7 +75,6 @@ val dogList = listOf(
         id = "4",
         name = "Otis",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 40,
         image = R.drawable.dog4,
     ),
@@ -77,7 +82,6 @@ val dogList = listOf(
         id = "5",
         name = "Roscoe",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 50,
         image = R.drawable.dog5,
     ),
@@ -85,7 +89,6 @@ val dogList = listOf(
         id = "6",
         name = "Abby",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 60,
         image = R.drawable.dog6,
         place = "Japan",
@@ -94,7 +97,6 @@ val dogList = listOf(
         id = "7",
         name = "Jasper",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 70,
         image = R.drawable.dog7,
         place = "Japan",
@@ -103,7 +105,6 @@ val dogList = listOf(
         id = "8",
         name = "Samson",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 80,
         image = R.drawable.dog8,
         place = "Japan",
@@ -112,7 +113,6 @@ val dogList = listOf(
         id = "9",
         name = "Abby",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 90,
         image = R.drawable.dog9,
         place = "Japan",
@@ -121,7 +121,6 @@ val dogList = listOf(
         id = "10",
         name = "Oliver",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 90,
         image = R.drawable.dog10,
         place = "Japan",
@@ -130,7 +129,6 @@ val dogList = listOf(
         id = "10",
         name = "Copper",
         sex = Sex.FEMALE,
-        color = DogColor.BROWN,
         age = 90,
         image = R.drawable.dog11,
     ),
